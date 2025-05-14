@@ -9,6 +9,7 @@ public class ReversCapitalWordInString {
 
         for (int i = 0; i < words.length; i++) {
             if(words[i].equals(words[i].toUpperCase())) {
+//                words[i] = new StringBuilder(words[i]).reverse().toString(); // sol 2
                 char[] charArray = words[i].toCharArray();
                 int left = 0 , right = charArray.length - 1;
                 while (left < right) {
